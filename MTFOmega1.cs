@@ -23,9 +23,9 @@ namespace MTFOmega1
 
         public override void OnEnabled()
         {
-            Config.UiuSoldier.Register();
-            Config.UiuAgent.Register();
-            Config.UiuLeader.Register();
+            Config.MTFOmega1Soldat.Register();
+            Config.MTFOmega1Lieutenant.Register();
+            Config.MTFOmega1Colonel.Register();
 
             eventHandlers = new EventHandlers(this);
 
