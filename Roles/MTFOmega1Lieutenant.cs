@@ -10,12 +10,12 @@ namespace MTFOmega1.Roles
     [CustomRole(RoleTypeId.NtfSergeant)]
     public class MTFOmega1Lieutenant : CustomRole
     {
-        public override uint Id { get; set; } = 3;
+        public override uint Id { get; set; } = 20;
         public override RoleTypeId Role { get; set; } = RoleTypeId.NtfSergeant;
         public override int MaxHealth { get; set; } = 100;
-        public override string Name { get; set; } = "Lieutenant F.I.M Omega-1";
-        public override string Description { get; set; } = "Help Ethics To Be Respected";
-        public override string CustomInfo { get; set; } = "Lieutenant F.I.M Omega-1";
+        public override string Name { get; set; } = "Lieutenant F.I.M Omega-1 'La Main Gauche De La Loi'";
+        public override string Description { get; set; } = "Unité special autre que NTF";
+        public override string CustomInfo { get; set; } = "Lieutenant F.I.M Omega-1 'La Main Gauche De La Loi'";
 
         public override List<string> Inventory { get; set; } = new()
         {
@@ -30,7 +30,7 @@ namespace MTFOmega1.Roles
         public override Dictionary<AmmoType, ushort> Ammo { get; set; } = new()
         {
             { AmmoType.Nato556, 80 },
-            { AmmoType.Nato9, 100 },
+            { AmmoType.Nato9, 150 },
         };
 
         public override SpawnProperties SpawnProperties { get; set; } = new()
